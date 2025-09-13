@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <meta charset="UTF-8">
     <title>{{ $title ?? 'Portfólio' }}</title>
     @livewireStyles
@@ -25,16 +28,20 @@
     </style>
 </head>
 <body>
-    
-
     <div class="container">
-        <nav>
-            <a href="/">Home</a>
-            <a href="/quem-sou-eu">Quem sou eu</a>
-            <a href="/sobre">Sobre</a>
-            <a href="/projetos">Projetos</a>
-            <a href="/contato">Contato</a>
-        </nav>
+        <nav class="menu">
+    <div class="menu-left">
+        <a href="/" class="brand">Lucas Bernardo</a>
+    </div>
+    <div class="menu-right">
+        <a href="/">Home</a>
+        <a href="/quem-sou-eu">Quem sou eu</a>
+        <a href="/sobre">Sobre</a>
+        <a href="/projetos">Projetos</a>
+        <a href="/contato">Contato</a>
+    </div>
+</nav>
+
         {{ $slot }}
     </div>
 

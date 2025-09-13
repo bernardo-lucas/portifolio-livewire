@@ -1,0 +1,60 @@
+body {
+  font-family: 'Fira Code', monospace;
+  background-color: #F4F4FB; 
+  color: #333;
+}       
+/* Layout principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Menu de navegação */
+.menu {
+  display: flex;
+  justify-content: space-between; /* separa esquerda e direita */
+  align-items: center;
+  background-color: #f3f3f300;
+  padding: 1rem;
+}
+
+/* Nome à esquerda */
+.menu-left .brand {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Abas à direita */
+.menu-right {
+  display: flex;
+  gap: 0.25rem; /* abas bem próximas */
+}
+
+.menu-right a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-right a:hover {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.laravel-color {
+  color: #F05340; /* vermelho elegante */
+  font-weight: bold;
+}
+
+.livewire-color {
+  background: linear-gradient(90deg, #FB70A9, #4E56A6); /* exemplo: vermelho → amarelo */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
