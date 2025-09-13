@@ -8,6 +8,7 @@ class QuemSouEu extends Component
 {
     public function render()
     {
-        return view('livewire.quem-sou-eu');
+        return view('livewire.quem-sou-eu')->layout('layouts.app');
     }
 }
+

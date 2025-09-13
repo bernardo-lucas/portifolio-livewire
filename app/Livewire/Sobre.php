@@ -8,6 +8,6 @@ class Sobre extends Component
 {
     public function render()
     {
-        return view('livewire.sobre');
+        return view('livewire.sobre')->layout('layouts.app');
     }
 }

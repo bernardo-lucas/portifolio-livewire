@@ -8,6 +8,7 @@ class Contato extends Component
 {
     public function render()
     {
-        return view('livewire.contato');
+        return view('livewire.contato')->layout('layouts.app');
     }
 }
+
